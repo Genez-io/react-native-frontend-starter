@@ -8,19 +8,19 @@ yamlVersion: 2
 # Information about the frontend, including the path, language, and publish directory.
 # It is optional. It can also be an array if there are multiple frontends you want to deploy.
 frontend:
-    # The folder where the frontend scripts will run.
-    path: .
-    # Specifies information about the SDK generation. If not specified, the SDK will not be generated for this frontend.
-    sdk:
-        # The language the SDK will be written in. Usually the same as the frontend language.
-        language: ts
-    # Scripts are running in the specified `path` directory.
-    scripts:
-        # List of scripts to run before deploying the frontend.
-        deploy:
-            - npm install @genezio-sdk/(•◡•)project-name(•◡•)
-            - npm install
-        # List of scripts to run when starting the local development server.
-        start:
-            - npm install
-            - npm run start
+  # The folder where the frontend scripts will run.
+  path: .
+  # Specifies information about the SDK generation. If not specified, the SDK will not be generated for this frontend.
+  sdk:
+    # The language the SDK will be written in. Usually the same as the frontend language.
+    language: ts
+  # Scripts are running in the specified `path` directory.
+  scripts:
+    # List of scripts to run before deploying the frontend.
+    deploy:
+      - npm install @genezio-sdk/${{projectName}}@1.0.0-${{stage}}
+      - npm install
+    # List of scripts to run when starting the local development server.
+    start:
+      - npm install
+      - npm run start
