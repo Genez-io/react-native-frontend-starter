@@ -22,5 +22,5 @@ frontend:
       - npm install
     # List of scripts to run when starting the local development server.
     start:
-      - npm install
+      - npm install --silent
       - npm run start
