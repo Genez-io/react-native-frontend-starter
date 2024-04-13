@@ -1,4 +1,4 @@
-import { BackendService } from "@genezio-sdk/spinner";
+import { BackendService } from "@genezio-sdk/(•◡•)project-name(•◡•)";
 import { useState } from "react";
 import {
     Button,
